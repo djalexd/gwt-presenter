@@ -1,0 +1,17 @@
+If you're looking for a simple, non-intrusive and intuitive Presenter implementation of MVP,
+you've found it. This is all you need to do:
+
+In your .gwt.xml file:
+<code><inherits name="com.questdome.gwt.presenter.GwtPresenter"/></code>
+
+In your code:
+ * code your view:
+ 
+ interface/class SimpleView extends IsWidget {
+   // operations
+ }
+ 
+ interface/class SimplePresenter extends Presenter<SimpleView> {
+   // operations. The presenter can access its bound display through
+   // #getDisplay() method.
+ }
