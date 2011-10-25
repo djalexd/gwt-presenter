@@ -15,3 +15,7 @@ In your code:
    // operations. The presenter can access its bound display through
    // #getDisplay() method.
  }
+ 
+That's it. Now your presenters don't know anything about underlying
+view implementation, but they communicate through #getDisplay method
+provided.
